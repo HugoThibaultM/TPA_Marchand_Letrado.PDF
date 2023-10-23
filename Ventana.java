@@ -3,7 +3,6 @@ import javax.swing.JFrame;
 
 public class Ventana extends JFrame {
     private JFrame ventana;
-    private Juego juego;
     private Player player;
     public Ventana(Panel panel){
         ventana=new JFrame();

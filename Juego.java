@@ -12,25 +12,25 @@ public class Juego extends JPanel {
 
     public Juego(){
         JFrame miVentana = new JFrame("Running Car");
-        Juego game = new Juego();
-        miVentana.add(game);
+
+        miVentana.add(this);
         miVentana.setSize(500,900);
         miVentana.setVisible(true);
         miVentana.setResizable(false);
         miVentana.setLocationRelativeTo(null);
         miVentana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-       /** while(true){
-            if(haChocado){
-                int reinicia=JOptionPane.showConfirmDialog(null,"has perdido" +
-                        "quieres reiniciar?", JOptionPane.YES_NO_OPTION);
-                if(reinicia==0){
-                    reiniciaValores();
-                }else if(reinicia==1){
-                    System.exit(0);
-                }
-            }
-        }*/
+        /** while(true){
+         if(haChocado){
+         int reinicia=JOptionPane.showConfirmDialog(null,"has perdido" +
+         "quieres reiniciar?", JOptionPane.YES_NO_OPTION);
+         if(reinicia==0){
+         reiniciaValores();
+         }else if(reinicia==1){
+         System.exit(0);
+         }
+         }
+         }*/
         addKeyListener(new KeyListener() {
             @Override
             public void keyTyped(KeyEvent e) {
